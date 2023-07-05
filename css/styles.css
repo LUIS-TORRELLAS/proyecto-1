@@ -3,6 +3,7 @@
 /* Fonts */
 /* Importar aquí la font */
   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+  @import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
 
 /* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
 *  cuyos valores asigna por defecto el navegador.
@@ -25,6 +26,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    background-image: linear-gradient(to top, #30cfd0 0%, #4d77c5 100%);
  }
 
 
@@ -36,6 +38,20 @@ main {
     
 }
 
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    font-size: 20px;
+}
+
+
+.menu-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
 
 /* Para quitar los puntos a los items de listas */
 ul {
@@ -43,18 +59,15 @@ ul {
     
 }
 
-
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
 a {
     text-decoration: none;
-    color: inherit;
+    color: white;
+
 }
 
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
+.menu-burger {
+    display: none;
 }
 
 #inicio {
@@ -62,12 +75,12 @@ header {
     flex-direction: column;
     justify-content: center;
     padding: 10px;
-    border: solid #af599e;
+    border: solid #2b45ad;
     border-radius: 20px;
     margin: 40px;
 }
 
-ul li a img {
+li a img {
     width: 50px;
     
 }
@@ -84,10 +97,10 @@ ul li {
   
 }
 
-#contacto {
+#contacto{
     display: flex;
-    flex-direction: column;
-    padding: 10px;
+    flex-direction: column; 
+    padding: 20px;
     
 }
 
@@ -108,7 +121,21 @@ h2 {
 }
 
 .logo {
+    display: inline;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
     width: 20vh;
+}
+/* Se crea esta clase para llamarla con javascript - permite darle un cambio interactivo al logo */
+.logo-cambio {
+    border-radius: 30px;
+}
+
+/* Se crea esta clase para llamarla con javascript - permite darle un cambio interactivo a la imagen personal*/
+.imagen-cambio {
+    -webkit-transform:scale(1.5);
+    box-shadow: 0px 0px 2px 2px #2b45ad;
 }
 
 p {
@@ -117,27 +144,188 @@ p {
 }
 
 .boton-cv {
-    background-color: #af599e;
+    background-color:#2b45ad;
     color: #fbfbfb;
     padding: 10px;
     border-radius: 30px;
 }
 
 .hablemos {
-    background-color: #af599e;
+    background-color: #2b45ad;
     border-radius: 20px;
     padding: 10px;
     margin-bottom: 20px;
 }
 
 footer {
-    background-color: #af599e;
+    background-color:#2b45ad;
     text-align: center;
     color: #fbfbfb;
     padding: 20px;
     border-radius: 20px;
+    margin: auto;
+    margin: 10px;
 }
 
+
+/* ********************************************** media queries ********************************************** */
+
+@media (max-width: 768px) {
+    main {
+        max-width: 768px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        scroll-behavior: smooth;
+               
+    }
+    
+    
+    /* Para quitar los puntos a los items de listas */
+    ul {
+        list-style: none;
+        
+    }
+    
+    /* Para que los enlaces hereden el color de texto y no tengan subrayado */
+    a {
+        text-decoration: none;
+        color: white;
+    
+    }
+
+    a:hover {
+        color: black;
+    }
+    
+    header {
+        display: flex;
+        justify-content: end;
+        padding: 30px;
+        font-size: 10px;
+        
+    }
+
+    .menu-burger {
+        display: flex;
+        background: none;
+        border: none;
+        color: #2b45ad;
+        font-size: 20px;                             
+    }
+
+    .menu-nav {
+        visibility: hidden;
+        display: flex;
+        justify-content: column;
+        align-items: end;
+        gap: 1rem;
+        padding: 10px;
+        
+        
+    }
+       
+    .logo {
+        display: none;
+    }
+
+       
+    #inicio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        border: solid #2b45ad;
+        border-radius: 20px;
+        margin: 40px;
+        font-size: 10px;
+    }
+    
+    ul li a img {
+        width: 10px;
+        
+    }
+    
+    ul li {
+        display: flex;
+        justify-content: end;
+        padding: 8px;
+        
+    }
+    
+    .foto-personal {
+        width: 80px;
+        border-radius: 50%;
+      
+    }
+    
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        font-size: 10px;
+               
+    }
+    
+    figure {
+        padding: 20px;
+    
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 20px;
+        
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    /* Se crea esta clase para llamarla con javascript - permite darle un cambio interactivo al logo */
+    .logo-cambio {
+        border-radius: 20px;
+    }
+    
+    /* Se crea esta clase para llamarla con javascript - permite darle un cambio interactivo a la imagen personal*/
+    .imagen-cambio {
+        -webkit-transform:scale(1.5);
+        box-shadow: 0px 0px 2px 2px #2b45ad;
+    }
+    
+    p {
+        margin: 1em;
+        line-height: 1;
+    }
+    
+    .boton-cv {
+        background-color:#2b45ad;
+        color: #fbfbfb;
+        padding: 10px;
+        border-radius: 30px;
+        font-size: 10px;
+    }
+    
+    .hablemos {
+        background-color: #2b45ad;
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+    
+    footer {
+        background-color:#2b45ad;
+        text-align: center;
+        color: #fbfbfb;
+        padding: 20px;
+        border-radius: 20px;
+        font-size: 10px;
+    }
+    
+    
+  }
 
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
 *  el margin: auto; para tenerlo centrado fácilmente ;)

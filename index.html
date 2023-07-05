@@ -8,11 +8,15 @@
     <title>Luis Torrellas</title>   
 </head>
 <body>
-
     <header>
         <a href="/"> <img src="/img/logoluis.png" alt="Logo personal" class="logo"> </a>
-        <a href="#inicio">   Inicio</a>    
-        <a href="#contacto"> Contacto</a>    
+        <nav class="menu-nav">
+            <ul class="nav-list">
+                <li> <a href="#inicio">   Inicio</a> </li>
+                <li> <a href="#contacto"> Contacto</a> </li>
+            </ul>
+       </nav>
+       <button class="menu-burger" id="btn-menu"> <i class="fi fi-br-menu-burger"></i> </button>
     </header>
 
     <main>
@@ -27,12 +31,17 @@
             <article class="soy">
                 <h1>Hola soy Luis</h1>
                 <p>
-                    Estoy en un proceso de formación y aprendizaje, tengo la aspiración de convertirme en un
-                    desarrollador web, sigo trabajando cada día para aprender, asimilar los temas, y bueno lo
-                    más importante que he aprendido es que debo continuar aunque por momentos me sienta frustrado.
-                    Sin embargo, estoy determinado a lograr mi meta.
-                </p>
-                <a href="/" class="boton-cv"> Descargar mi CV</a>
+                    Estoy en un proceso de formación y aprendizaje, tengo la aspiración 
+                    de convertirme en un desarrollador web, sigo trabajando cada día 
+                    para aprender, asimilar los temas, y bueno lo más importante es 
+                    seguir constantemente en mi formación con el lema “práctica y más 
+                    práctica”.
+                    ::: 
+                </p> </br>
+                <p> <strong> Competencias:  HTML - CSS - JAVASCRIPT - GIT - LINUX </strong></p>
+
+                <!-- Usando el atributo download se logra descargar el CV en PDF -->
+                <a href="/cv/cv.pdf" class="boton-cv" download=""> Descargar mi CV</a>
             </article>
 
         </section>
@@ -51,7 +60,7 @@
             </article>
 
             <ul>
-                <li> <a href="mailto:luistorrellas.col@gmail.com">  <img src="/img/mail.png" alt="mail"> </a>          </li>
+                <li> <a href="mailto:luistorrellas.col@gmail.com">  <img src="/img/mail.png" alt="mail"> </a>  </li>
                 <li> <a href="/">  <img src="/img/github.png" alt="github"> </a>      </li>
                 <li> <a href="/">  <img src="/img/linkedin.png" alt="linkedin"> </a>  </li>
             </ul>
@@ -63,6 +72,6 @@
 
 
     <footer> Mi perfil profesional </footer>
-        
+    <script src="codigo.js"></script>
 </body>
 </html>
