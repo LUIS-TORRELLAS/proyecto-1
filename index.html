@@ -9,11 +9,11 @@
 </head>
 <body>
     <header>
-        <a href="/"> <img src="/img/logoluis.png" alt="Logo personal" class="logo"> </a>
+        <a href="/"> <img src="img/logoluis.png" alt="Logo personal" class="logo"> </a>
         <nav class="menu-nav">
-            <ul class="nav-list">
-                <li> <a href="#inicio">   Inicio</a> </li>
-                <li> <a href="#contacto"> Contacto</a> </li>
+             <ul class="nav-list">
+                <li> <a class="inicio" href="#inicio">   Inicio   </a> </li>
+                <li> <a class="contacto" href="#contacto"> Contacto </a> </li>
             </ul>
        </nav>
        <button class="menu-burger" id="btn-menu"> <i class="fi fi-br-menu-burger"></i> </button>
@@ -25,7 +25,7 @@
         <section id="inicio">
 
             <figure>
-                <img class="foto-personal" src="/img/fotopersonal.png" alt="Foto personal">
+                <img class="foto-personal" src="img/fotopersonal.png" alt="Foto personal">
             </figure>
 
             <article class="soy">
@@ -39,10 +39,9 @@
                     ::: 
                 </p> </br>
                 <p> <strong> Competencias:  HTML - CSS - JAVASCRIPT - GIT - LINUX </strong></p>
-
-                <!-- Usando el atributo download se logra descargar el CV en PDF -->
-                <a href="/cv/cv.pdf" class="boton-cv" download=""> Descargar mi CV</a>
             </article>
+            <!-- Usando el atributo download se logra descargar el CV en PDF -->
+            <a href="cv/cv.pdf" class="boton-cv" download=""> Descargar mi CV</a>
 
         </section>
 
@@ -60,9 +59,9 @@
             </article>
 
             <ul>
-                <li> <a href="mailto:luistorrellas.col@gmail.com">  <img src="/img/mail.png" alt="mail"> </a>  </li>
-                <li> <a href="/">  <img src="/img/github.png" alt="github"> </a>      </li>
-                <li> <a href="/">  <img src="/img/linkedin.png" alt="linkedin"> </a>  </li>
+                <li> <a href="mailto:luistorrellas.col@gmail.com">  <img src="/img/mail.png" alt="mail" class="mail"> </a>  </li>
+                <li> <a href="/">  <img src="/img/github.png" alt="github" class="github"> </a>      </li>
+                <li> <a href="/">  <img src="/img/linkedin.png" alt="linkedin" class="linkedin"> </a>  </li>
             </ul>
             
         </section>

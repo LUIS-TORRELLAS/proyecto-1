@@ -27,6 +27,7 @@ body {
     padding: 0;
     min-height: 100vh;
     background-image: linear-gradient(to top, #30cfd0 0%, #4d77c5 100%);
+    
  }
 
 
@@ -40,18 +41,25 @@ main {
 
 header {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
     padding: 30px;
     font-size: 20px;
+    border: solid #2b45ad;
+    border-radius: 20px 20px 20px 20px;
+    margin: 70px;
+        
 }
 
 
 .menu-nav {
     display: flex;
-    justify-content: space-around;
+    gap: 50px;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
+
 
 /* Para quitar los puntos a los items de listas */
 ul {
@@ -64,6 +72,18 @@ a {
     text-decoration: none;
     color: white;
 
+}
+
+.inicio:hover {
+    background-color: #00030c;
+    border-radius: 100px;
+    padding: 20px;
+}
+
+.contacto:hover {
+    background-color: #00030c;
+    border-radius: 100px;
+    padding: 20px;
 }
 
 .menu-burger {
@@ -104,6 +124,15 @@ ul li {
     
 }
 
+#contacto ul {
+    display: flex;
+    justify-content: center;
+}
+
+.mail, .github, .linkedin {
+    width: 80px;
+}
+
 figure {
     padding: 30px;
 
@@ -129,7 +158,7 @@ h2 {
 }
 /* Se crea esta clase para llamarla con javascript - permite darle un cambio interactivo al logo */
 .logo-cambio {
-    border-radius: 30px;
+    opacity: 0.2;
 }
 
 /* Se crea esta clase para llamarla con javascript - permite darle un cambio interactivo a la imagen personal*/
@@ -140,7 +169,7 @@ h2 {
 
 p {
     margin: 2em;
-    line-height: 1.2;
+    line-height: 2.2;
 }
 
 .boton-cv {
@@ -148,6 +177,32 @@ p {
     color: #fbfbfb;
     padding: 10px;
     border-radius: 30px;
+    text-align: center;
+}
+
+.boton-cv:hover {
+    background-color: #00030c;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+.mail:hover {
+    background-color: #2b45ad;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.github:hover {
+    background-color: #2b45ad;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.linkedin:hover {
+    background-color: #2b45ad;
+    border-radius: 20px;
+    padding: 20px;
+ 
 }
 
 .hablemos {
@@ -190,7 +245,7 @@ footer {
     /* Para que los enlaces hereden el color de texto y no tengan subrayado */
     a {
         text-decoration: none;
-        color: white;
+        color: #2b45ad;
     
     }
 
@@ -199,11 +254,16 @@ footer {
     }
     
     header {
-        display: flex;
-        justify-content: end;
-        padding: 30px;
-        font-size: 10px;
-        
+    display: flex;
+    background-color: #fbfbfb;
+    opacity: 0.6;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    color: #00030c;
+    margin: 20px;
+    padding: 10px;
+    
+                
     }
 
     .menu-burger {
@@ -211,7 +271,8 @@ footer {
         background: none;
         border: none;
         color: #2b45ad;
-        font-size: 20px;                             
+        font-size: 20px;
+                                     
     }
 
     .menu-nav {
@@ -221,10 +282,9 @@ footer {
         align-items: end;
         gap: 1rem;
         padding: 10px;
-        
-        
-    }
-       
+  }
+
+         
     .logo {
         display: none;
     }
@@ -240,12 +300,12 @@ footer {
         margin: 40px;
         font-size: 10px;
     }
-    
-    ul li a img {
-        width: 10px;
-        
+
+    .mail, .github, .linkedin {
+        width: 40px;
     }
     
+       
     ul li {
         display: flex;
         justify-content: end;
@@ -296,7 +356,7 @@ footer {
     
     p {
         margin: 1em;
-        line-height: 1;
+        line-height: 2;
     }
     
     .boton-cv {
@@ -308,7 +368,9 @@ footer {
     }
     
     .hablemos {
-        background-color: #2b45ad;
+        background-color: #fbfbfb;
+        opacity: 0.6;
+        border: solid #2b45ad;
         border-radius: 20px;
         padding: 10px;
         margin-bottom: 20px;
@@ -316,9 +378,11 @@ footer {
     }
     
     footer {
-        background-color:#2b45ad;
+        background-color: #fbfbfb;
+        opacity: 0.6;
+        border: solid #2b45ad;
         text-align: center;
-        color: #fbfbfb;
+        color: black;
         padding: 20px;
         border-radius: 20px;
         font-size: 10px;
